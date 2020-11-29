@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Airbnb houses in NYC and Boston</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../static/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mentor - v2.1.0
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="/">Airbnb</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li><a href="/">Home</a></li>
+            <li class="active"><a href="/about">About</a></li>
+          <li class="drop-down"><a href="#">Data</a>
+            <ul>
+                <li><a href="/NYChome">NYC Houses</a></li>
+                <li><a href="/NYChost">NYC Hosts</a></li>
+                <li><a href="/Bostonhome">Boston Houses</a></li>
+                <li><a href="/Bostonhost">Boston Hosts</a></li>
+            </ul>
+          </li>
+          <li><a href="/search">Join Search</a></li>
+          <li class="drop-down"><a href="#">Exploration</a>
+            <ul>
+              <li class="drop-down"><a href="#">Price Average by Location</a>
+                <ul>
+                  <li><a href="/nycprice?area=Staten Island">In NYC</a></li>
+                  <li><a href="/bostonprice">In Boston</a></li>
+                </ul>
+              </li>
+              <li><a href="/hostinBN">Hosts in two places</a></li>
+              <li><a href="/tag?area=NYC">Amenities Percentage Research</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <main id="main">
+    <!-- ======= Breadcrumbs ======= -->
+    <div class="breadcrumbs" data-aos="fade-in">
+      <div class="container">
+        <h2>About us</h2>
+        <p>Learning project's detail and our team here.</p>
+      </div>
+    </div><!-- End Breadcrumbs -->
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>About us</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="../static/assets/img/diagram.png" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>We’re a team from USC Viterbi, master majored in Applied Data Science. </h3>
+            <p class="font-italic">
+              The project is for DSCI 551: Foundations of Data Management final project.
+            </p>
+              <p>Instrucuted Professor: Wensheng Wu</p>
+              <p>Our data sources are from <a href="http://insideairbnb.com/get-the-data.html">inside Airbnb</a>. Thanks for his contribution!</p>
+            <ul>
+              <li><i class="icofont-checked"></i>We spilt listing-detail data to two tables: House/Host. Then we use Python to clean dirty data.</li>
+              <li><i class="icofont-checked"></i>We choose to upload review data to firebase real time database for query.</li>
+              <li><i class="icofont-checked"></i>Spark help us to deal with huge data join on finding price average, host intersaction.</li>
+              <li><i class="icofont-checked"></i>Flask is our back-end tool.</li>
+              <li><i class="icofont-checked"></i>Thanks for Bootstrap give us such cool front-end design!</li>
+            </ul>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+    <!-- ======= Features Section ======= -->
+    <section id="features" class="features">
+      <div class="container" data-aos="fade-up">
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+          <div class="col-lg-3 col-md-4">
+            <div class="icon-box">
+              <i class="ri-store-line" style="color: #ffbb2c;"></i>
+              <h3><a href="">R</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="icofont-file-python" style="color: #5578ff;"></i>
+              <h3><a href="">Python3</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-md-0">
+            <div class="icon-box">
+              <i class="ri-calendar-todo-line" style="color: #e80368;"></i>
+              <h3><a href="">Spark</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4 mt-lg-0">
+            <div class="icon-box">
+              <i class="icofont-file-sql" style="color: #e361ff;"></i>
+              <h3><a href="">Mysql</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="icofont-brand-amazon" style="color: #47aeff;"></i>
+              <h3><a href="">Firebase</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="icofont-flask" style="color: #ffa76e;"></i>
+              <h3><a href="">Flask</a></h3>
+            </div>
+          </div>
+          <div class="col-lg-3 col-md-4 mt-4">
+            <div class="icon-box">
+              <i class="icofont-bootstrap" style="color: #11dbcf;"></i>
+              <h3><a href="">Bootstrap</a></h3>
+            </div>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Features Section -->
+
+      <!-- ======= Testimonials Section ======= -->
+    <section id="testimonials" class="testimonials">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Our members</h2>
+          <p>Learn our team</p>
+        </div>
+
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+              <img src="../static/assets/img/testimonials/member1.png" class="testimonial-img" alt="">
+              <h3>Chuxin Zhang</h3>
+              <h4>Founder</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                  Bachelor‘s Degree, Information Management and Technology, Syracuse University
+                  <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+                <p>Familiar with: Python, SQL, R, Front-Web</p>
+            </div>
+          </div>
+
+          <div class="testimonial-wrap">
+            <div class="testimonial-item">
+              <img src="../static/assets/img/testimonials/member2.png" class="testimonial-img" alt="">
+              <h3>Wei Huang</h3>
+              <h4>Founder</h4>
+              <p>
+                <i class="bx bxs-quote-alt-left quote-icon-left"></i>
+                Bachelor‘s Degree, Soft Engineering, Huazhong University of Science and Technology
+            <i class="bx bxs-quote-alt-right quote-icon-right"></i>
+              </p>
+                <p>Familiar with: Java, SQL, Server side</p>
+            </div>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Testimonials Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container d-md-flex py-4">
+
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>DSCI551 Project - Chuxin Zhang, Wei Huang</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>, Chuxin Zhang
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../static/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="../static/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../static/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../static/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../static/assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../static/assets/js/main.js"></script>
+
+</body>
+
+</html>

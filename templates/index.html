@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta content="width=device-width, initial-scale=1.0" name="viewport">
+
+  <title>Airbnb houses in NYC and Boston</title>
+  <meta content="" name="descriptison">
+  <meta content="" name="keywords">
+
+
+  <!-- Google Fonts -->
+  <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,300i,400,400i,600,600i,700,700i|Raleway:300,300i,400,400i,500,500i,600,600i,700,700i|Poppins:300,300i,400,400i,500,500i,600,600i,700,700i" rel="stylesheet">
+
+  <!-- Vendor CSS Files -->
+  <link href="../static/assets/vendor/bootstrap/css/bootstrap.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/icofont/icofont.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/boxicons/css/boxicons.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/remixicon/remixicon.css" rel="stylesheet">
+  <link href="../static/assets/vendor/owl.carousel/assets/owl.carousel.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/animate.css/animate.min.css" rel="stylesheet">
+  <link href="../static/assets/vendor/aos/aos.css" rel="stylesheet">
+
+  <!-- Template Main CSS File -->
+  <link href="../static/assets/css/style.css" rel="stylesheet">
+
+  <!-- =======================================================
+  * Template Name: Mentor - v2.1.0
+  * Template URL: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/
+  * Author: BootstrapMade.com
+  * License: https://bootstrapmade.com/license/
+  ======================================================== -->
+</head>
+
+<body>
+
+  <!-- ======= Header ======= -->
+  <header id="header" class="fixed-top">
+    <div class="container d-flex align-items-center">
+
+      <h1 class="logo mr-auto"><a href="/">Airbnb</a></h1>
+      <!-- Uncomment below if you prefer to use an image logo -->
+      <!-- <a href="index.html" class="logo mr-auto"><img src="assets/img/logo.png" alt="" class="img-fluid"></a>-->
+
+      <nav class="nav-menu d-none d-lg-block">
+        <ul>
+          <li class="active"><a href="/">Home</a></li>
+            <li><a href="/about">About</a></li>
+          <li class="drop-down"><a href="#">Data</a>
+            <ul>
+                <li><a href="/NYChome">NYC Houses</a></li>
+                <li><a href="/NYChost">NYC Hosts</a></li>
+                <li><a href="/Bostonhome">Boston Houses</a></li>
+                <li><a href="/Bostonhost">Boston Hosts</a></li>
+            </ul>
+          </li>
+          <li><a href="/search">Join Search</a></li>
+          <li class="drop-down"><a href="#">Exploration</a>
+            <ul>
+              <li class="drop-down"><a href="#">Price Average by Location</a>
+                <ul>
+                  <li><a href="/nycprice?area=Staten Island">In NYC</a></li>
+                  <li><a href="/bostonprice">In Boston</a></li>
+                </ul>
+              </li>
+              <li><a href="/hostinBN">Hosts in two places</a></li>
+              <li><a href="/tag?area=NYC">Amenities Percentage Research</a></li>
+            </ul>
+          </li>
+        </ul>
+      </nav><!-- .nav-menu -->
+
+    </div>
+  </header><!-- End Header -->
+
+  <!-- ======= Hero Section ======= -->
+  <section id="hero" class="d-flex justify-content-center align-items-center">
+    <div class="container position-relative" data-aos="zoom-in" data-aos-delay="100">
+      <h1>Getting Search,<br>Have a good Tour</h1>
+      <h2>This project will help you to get a research on Airbnb houses both in Boston and in NYC.</h2>
+      <a href="#data" class="btn-get-started">See Data</a>
+    </div>
+  </section><!-- End Hero -->
+
+  <main id="main">
+
+    <!-- ======= About Section ======= -->
+    <section id="about" class="about">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>About</h2>
+          <p>About Us</p>
+        </div>
+
+        <div class="row">
+          <div class="col-lg-6 order-1 order-lg-2" data-aos="fade-left" data-aos-delay="100">
+            <img src="../static/assets/img/about.jpg" class="img-fluid" alt="">
+          </div>
+          <div class="col-lg-6 pt-4 pt-lg-0 order-2 order-lg-1 content">
+            <h3>We’re a team from USC Viterbi, master majored in Applied Data Science. </h3>
+            <p class="font-italic">
+              This website will give you an intuitive way to view NYC and Boston Airbnb data.
+            </p>
+              <p>What we have:</p>
+            <ul>
+              <li><i class="icofont-check-circled"></i>View all the data (Houses/Hosts) in NYC and Boston</li>
+              <li><i class="icofont-check-circled"></i>Find comments about the house easily by click the house id.</li>
+              <li><i class="icofont-check-circled"></i>Find all the houses the host have by click his/her host id.</li>
+              <li><i class="icofont-check-circled"></i>Get a search or filter through data by its id, name, locations... </li>
+              <li><i class="icofont-check-circled"></i>Get a join search between Houses and Hosts table so that you can get both information at the same time.</li>
+              <li><i class="icofont-check-circled"></i>Some other amazing explorations and analyzing we already supported you!</li>
+            </ul>
+            <p>
+              In this project, we used Mysql and firebase to store our data. And we also use Spark to deal with some data analyzing which showing on our exploration.
+                This web is made of Flask framework and Bootstrap design. Users can easily get through the data they need.
+            </p>
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End About Section -->
+
+    <!-- ======= Counts Section ======= -->
+    <section id="counts" class="counts section-bg">
+      <div class="container">
+
+        <div class="row counters">
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">5</span>
+            <p>Data sets</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">520</span><span>k</span>
+            <p>Data Rows</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">58</span>
+            <p>Data Attributes</p>
+          </div>
+
+          <div class="col-lg-3 col-6 text-center">
+            <span data-toggle="counter-up">2</span>
+            <p>Group Size</p>
+          </div>
+
+        </div>
+
+      </div>
+    </section><!-- End Counts Section -->
+
+    <!-- ======= Data Section ======= -->
+    <section id="data" class="courses">
+      <div class="container" data-aos="fade-up">
+
+        <div class="section-title">
+          <h2>Data</h2>
+          <p>View Data</p>
+        </div>
+
+        <div class="row" data-aos="zoom-in" data-aos-delay="100">
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="course-item">
+              <img src="../static/assets/img/NYChouse.jpg" class="img-fluid" alt="...">
+              <div class="course-content">
+                <h3><a href="/NYChome">NYC Houses</a></h3>
+                <p>You can see all the information about NYC houses here. You can also find comments about these listings.</p>
+              </div>
+            </div>
+          </div> <!-- End Data Item-->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="course-item">
+              <img src="../static/assets/img/NYChost.jpg" class="img-fluid" alt="...">
+              <div class="course-content">
+                <h3><a href="/NYChost">NYC Hosts</a></h3>
+                <p>You can see all the information about NYC hosts here. Remember to click host id to see how many houses he/she has!</p>
+              </div>
+            </div>
+          </div> <!-- End Data Item-->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="course-item">
+              <img src="../static/assets/img/Bostonhouse.jpg" class="img-fluid" alt="...">
+              <div class="course-content">
+                <h3><a href="/Bostonhome">Boston Houses</a></h3>
+                <p>You can see all the information about NYC houses here. </p>
+              </div>
+            </div>
+          </div> <!-- End Data Item-->
+
+          <div class="col-lg-3 col-md-6 d-flex align-items-stretch">
+            <div class="course-item">
+              <img src="../static/assets/img/Bostonhost.jpg" class="img-fluid" alt="...">
+              <div class="course-content">
+                <h3><a href="/Bostonhost">Boston Hosts</a></h3>
+                <p>You can see all the information about Boston hosts here. Remember to click host id to see how many houses he/she has!</p>
+              </div>
+            </div>
+          </div> <!-- End Data Item-->
+
+        </div>
+
+      </div>
+    </section><!-- End Popular Courses Section -->
+
+      <!-- ======= Why Us Section ======= -->
+    <section id="why-us" class="why-us">
+      <div class="container" data-aos="fade-up">
+        <div class="section-title">
+          <h2>Exploration</h2>
+          <p>View Exploration</p>
+        </div>
+        <div class="row">
+          <div class="col-lg-4 d-flex align-items-stretch">
+            <div class="content">
+              <h3>Exploration by Spark</h3>
+              <p>
+                  We offered amount of exploration data to help you with your plan. We use Spark Dataframe to deal with these data analyzing.
+              </p>
+            </div>
+          </div>
+          <div class="col-lg-8 d-flex align-items-stretch" data-aos="zoom-in" data-aos-delay="100">
+            <div class="icon-boxes d-flex flex-column justify-content-center">
+              <div class="row">
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-building-house"></i>
+                    <h4>Price Average by Location <a href="/nycprice?area=Staten Island">in NYC</a> and <a href="/bostonprice">in Boston</a></h4>
+                      <p>We calculate price average by house location in NYC and in Boston.</p>
+                  </div>
+                </div>
+                  <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-bed"></i>
+                    <a href="/hostinBN"><h4>Host intersection</h4></a>
+                    <p>See superhosts who have houses both in Boston and NYC!</p>
+                  </div>
+                </div>
+                <div class="col-xl-4 d-flex align-items-stretch">
+                  <div class="icon-box mt-4 mt-xl-0">
+                    <i class="bx bx-wifi"></i>
+                    <a href="/tag?area=NYC"><h4>Amenities percentage by room type</h4></a>
+                    <p>See how likely you will get the amenities according to the room type you choose.</p>
+                  </div>
+                </div>
+              </div>
+            </div><!-- End .content-->
+          </div>
+        </div>
+
+      </div>
+    </section><!-- End Why Us Section -->
+
+  </main><!-- End #main -->
+
+  <!-- ======= Footer ======= -->
+  <footer id="footer">
+
+    <div class="container d-md-flex py-4">
+
+      <div class="mr-md-auto text-center text-md-left">
+        <div class="copyright">
+          &copy; Copyright <strong><span>DSCI551 Project - Chuxin Zhang, Wei Huang</span></strong>. All Rights Reserved
+        </div>
+        <div class="credits">
+          <!-- All the links in the footer should remain intact. -->
+          <!-- You can delete the links only if you purchased the pro version. -->
+          <!-- Licensing information: https://bootstrapmade.com/license/ -->
+          <!-- Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/mentor-free-education-bootstrap-theme/ -->
+          Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>, Chuxin Zhang
+        </div>
+      </div>
+    </div>
+  </footer><!-- End Footer -->
+
+  <a href="#" class="back-to-top"><i class="bx bx-up-arrow-alt"></i></a>
+  <div id="preloader"></div>
+
+  <!-- Vendor JS Files -->
+  <script src="../static/assets/vendor/jquery/jquery.min.js"></script>
+  <script src="../static/assets/vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+  <script src="../static/assets/vendor/jquery.easing/jquery.easing.min.js"></script>
+  <script src="../static/assets/vendor/php-email-form/validate.js"></script>
+  <script src="../static/assets/vendor/waypoints/jquery.waypoints.min.js"></script>
+  <script src="../static/assets/vendor/counterup/counterup.min.js"></script>
+  <script src="../static/assets/vendor/owl.carousel/owl.carousel.min.js"></script>
+  <script src="../static/assets/vendor/aos/aos.js"></script>
+
+  <!-- Template Main JS File -->
+  <script src="../static/assets/js/main.js"></script>
+
+</body>
+
+</html>
