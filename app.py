@@ -1,7 +1,7 @@
 from flask import Flask,render_template, request
 import requests
 import pymysql
-
+import cryptography
 app = Flask(__name__)
 def db(table,page=1, keyword=None,case='all'):
    cnx = pymysql.connect(host='localhost', user='root', password='123456', database='project', charset="utf8")
